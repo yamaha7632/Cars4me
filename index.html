@@ -3,31 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cars4Me Inventory</title>
+<title>Cars4Me - Affordable Used Cars</title>
 <style>
   body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
-    padding: 20px;
+    padding: 0;
   }
-  h1 {
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  header p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+  }
+  nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background-color: #004085;
+  }
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
     text-align: center;
     color: #333;
+    margin-bottom: 20px;
   }
+  /* Inventory Grid */
   .inventory-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
   }
   .car-card {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .car-gallery {
     display: flex;
@@ -90,133 +127,118 @@
   .contact-btn:hover {
     background-color: #0056b3;
   }
+  /* About Us Section */
+  .about-us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .about-us p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
 </style>
 </head>
 <body>
-<h1>Cars4Me Inventory</h1>
-<div class="inventory-grid">
 
-  <!-- 2018 BMW M550 X-Drive -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+3" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+4" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+5" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+6" alt="">
-      <img src="https://via.placeholder.com/400x200?text=BMW+M550+7" alt="">
-    </div>
-    <div class="car-details">
-      <div class="car-title">2018 BMW M550 X-Drive</div>
-      <div class="car-price">$39,999</div>
-      <div class="car-info">
-        36,000 miles<br>
-        Powerful V8 Twin Turbo 585 HP Engine<br>
-        Clean Title<br>
-        Prior Lake, MN
+<header>
+  <h1>Cars4Me</h1>
+  <p>Cars for you, for less.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about-us">About Us</a>
+</nav>
+
+<main>
+
+  <section id="home">
+    <h2>Affordable Used Cars in South Metro Twin Cities</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Looking for budget-friendly cars in Savage, Burnsville, Shakopee, or Prior Lake? 
+      Cars4Me connects buyers with vetted local sellers — no dealership markups, no hidden fees.
+    </p>
+  </section>
+
+  <section id="inventory">
+    <h2>Current Inventory</h2>
+    <div class="inventory-grid">
+
+      <!-- 2018 BMW M550 X-Drive -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+4" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+5" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+6" alt="">
+          <img src="https://via.placeholder.com/400x200?text=BMW+M550+7" alt="">
+        </div>
+        <div class="car-details">
+          <div class="car-title">2018 BMW M550 X-Drive</div>
+          <div class="car-price">$39,999</div>
+          <div class="car-info">
+            36,000 miles<br>
+            Powerful V8 Twin Turbo 585 HP Engine<br>
+            Clean Title<br>
+            Prior Lake, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
       </div>
-      <a href="#" class="contact-btn">Contact / More Info</a>
-    </div>
-  </div>
 
-  <!-- 2021 Subaru Crosstrek Premium -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+3" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+4" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+5" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+6" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+7" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Subaru+8" alt="">
-    </div>
-    <div class="car-details">
-      <div class="car-title">2021 Subaru Crosstrek Premium</div>
-      <div class="car-price">$18,099</div>
-      <div class="car-info">
-        15,000 Miles<br>
-        2.0 Liter 4 Cylinder Engine<br>
-        Symmetrical All Wheel Drive<br>
-        Prior Salvage Title<br>
-        Prior Lake, MN
+      <!-- 2021 Subaru Crosstrek Premium -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+4" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+5" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+6" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+7" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Subaru+8" alt="">
+        </div>
+        <div class="car-details">
+          <div class="car-title">2021 Subaru Crosstrek Premium</div>
+          <div class="car-price">$18,099</div>
+          <div class="car-info">
+            15,000 Miles<br>
+            2.0 Liter 4 Cylinder Engine<br>
+            Symmetrical All Wheel Drive<br>
+            Prior Salvage Title<br>
+            Prior Lake, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
       </div>
-      <a href="#" class="contact-btn">Contact / More Info</a>
-    </div>
-  </div>
 
-  <!-- 2015 BMW M4 Coupe (SOLD) -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=M4+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=M4+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=M4+3" alt="">
-      <img src="https://via.placeholder.com/400x200?text=M4+4" alt="">
-    </div>
-    <div class="car-details">
-      <span class="sold-tag">SOLD</span>
-      <div class="car-title">2015 BMW M4 Coupe</div>
-      <div class="car-price">SOLD</div>
-      <div class="car-info">
-        50,000 miles<br>
-        Unique In-line 6 Cylinder 525 HP Engine<br>
-        Prior Salvage Title<br>
-        Prior Lake, MN
+      <!-- 2015 BMW M4 Coupe (SOLD) -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=M4+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=M4+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=M4+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=M4+4" alt="">
+        </div>
+        <div class="car-details">
+          <span class="sold-tag">SOLD</span>
+          <div class="car-title">2015 BMW M4 Coupe</div>
+          <div class="car-price">SOLD</div>
+          <div class="car-info">
+            50,000 miles<br>
+            Unique In-line 6 Cylinder 525 HP Engine<br>
+            Prior Salvage Title<br>
+            Prior Lake, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
       </div>
-      <a href="#" class="contact-btn">Contact / More Info</a>
-    </div>
-  </div>
 
-  <!-- 2001 Dodge Ram 2500 Diesel -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=Ram+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Ram+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Ram+3" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Ram+4" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Ram+5" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Ram+6" alt="">
-    </div>
-    <div class="car-details">
-      <div class="car-title">2001 Dodge Ram 2500 Diesel</div>
-      <div class="car-price">$14,999</div>
-      <div class="car-info">
-        320,000 miles<br>
-        Strong In-line 6 Cylinder 5.9L Diesel Cummins<br>
-        Long 8 foot bed<br>
-        Prior Salvage Title<br>
-        Savage, MN
-      </div>
-      <a href="#" class="contact-btn">Contact / More Info</a>
-    </div>
-  </div>
-
-  <!-- 2014 Honda Civic LX Sedan -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=Civic+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Civic+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Civic+3" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Civic+4" alt="">
-    </div>
-    <div class="car-details">
-      <div class="car-title">2014 Honda Civic LX Sedan - LOW MILES</div>
-      <div class="car-price">$9,899</div>
-      <div class="car-info">
-        35,000 miles<br>
-        1.8 Liter 4 Cylinder Fuel Efficient Engine<br>
-        Prior Salvage Title<br>
-        Savage, MN
-      </div>
-      <a href="#" class="contact-btn">Contact / More Info</a>
-    </div>
-  </div>
-
-  <!-- 2015 Mazda6 Sport (SOLD) -->
-  <div class="car-card">
-    <div class="car-gallery">
-      <img src="https://via.placeholder.com/400x200?text=Mazda6+1" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Mazda6+2" alt="">
-      <img src="https://via.placeholder.com/400x200?text=Mazda6+3" alt="">
-      <img src="https://via.placeholder.com/400x200?
+      <!-- 2001 Dodge Ram 2500 Diesel -->
+      <div class="car-card">
+        <div class="car-gallery
