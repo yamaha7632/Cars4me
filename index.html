@@ -5,140 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cars4Me - Affordable Used Cars</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-  header p {
-    margin: 5px 0 0 0;
-    font-size: 1.2em;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0056b3;
-  }
-  nav a {
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    background-color: #004085;
-  }
-  main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  section {
-    margin-bottom: 40px;
-  }
-  section h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  /* Inventory Grid */
-  .inventory-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .car-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  .car-gallery {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-  .car-gallery img {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    margin-right: 5px;
-    border-bottom: 1px solid #ddd;
-  }
-  .car-details {
-    padding: 15px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .car-title {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-  }
-  .car-price {
-    color: #007bff;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  .car-info {
-    font-size: 14px;
-    color: #555;
-    flex: 1;
-  }
-  .sold-tag {
-    color: white;
-    background-color: red;
-    padding: 3px 7px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  .contact-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  .contact-btn:hover {
-    background-color: #0056b3;
-  }
-  /* About Us Section */
-  .about-us {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  .about-us p {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #333;
-  }
+  body { font-family: Arial, sans-serif; background-color: #f5f5f5; margin:0; padding:0; }
+  header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
+  header h1 { margin:0; font-size:2em; }
+  header p { margin:5px 0 0 0; font-size:1.2em; }
+  nav { display:flex; justify-content:center; background-color:#0056b3; }
+  nav a { color:white; padding:15px 20px; text-decoration:none; font-weight:bold; }
+  nav a:hover { background-color:#004085; }
+  main { max-width:1200px; margin:20px auto; padding:0 20px; }
+  section { margin-bottom:40px; }
+  section h2 { text-align:center; color:#333; margin-bottom:20px; }
+  .inventory-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px; }
+  .car-card { background-color:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); display:flex; flex-direction:column; overflow:hidden; }
+  .car-gallery { display:flex; overflow-x:auto; scroll-behavior:smooth; }
+  .car-gallery img { width:100%; max-width:300px; height:200px; object-fit:cover; flex-shrink:0; margin-right:5px; border-bottom:1px solid #ddd; }
+  .car-details { padding:15px; flex:1; display:flex; flex-direction:column; }
+  .car-title { font-weight:bold; font-size:18px; margin:0 0 5px 0; }
+  .car-price { color:#007bff; font-size:16px; font-weight:bold; margin-bottom:8px; }
+  .car-info { font-size:14px; color:#555; flex:1; }
+  .sold-tag { color:white; background-color:red; padding:3px 7px; border-radius:5px; font-size:12px; font-weight:bold; display:inline-block; margin-bottom:5px; }
+  .contact-btn { background-color:#007bff; color:white; border:none; padding:10px; border-radius:8px; cursor:pointer; text-align:center; text-decoration:none; margin-top:10px; font-weight:bold; }
+  .contact-btn:hover { background-color:#0056b3; }
 </style>
 </head>
 <body>
@@ -154,7 +41,6 @@
 </nav>
 
 <main>
-
   <section id="home">
     <h2>Affordable Used Cars in South Metro Twin Cities</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
@@ -231,4 +117,93 @@
           <div class="car-price">SOLD</div>
           <div class="car-info">
             50,000 miles<br>
-            Unique In-line 6 Cylinder 525 HP Engine<br
+            Unique In-line 6 Cylinder 525 HP Engine<br>
+            Prior Salvage Title<br>
+            Prior Lake, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
+      </div>
+      
+      <!-- 2014 Honda Civic LX Sedan -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=Honda+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Honda+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Honda+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Honda+4" alt="">
+        </div>
+        <div class="car-details">
+          <div class="car-title">2014 Honda Civic LX Sedan</div>
+          <div class="car-price">$9,899</div>
+          <div class="car-info">
+            35,000 miles<br>
+            1.8 Liter 4 Cylinder Fuel Efficient Engine<br>
+            Prior Salvage Title<br>
+            Savage, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
+      </div>
+
+      <!-- 2001 Dodge Ram 2500 Diesel Quad Cab 4x4 -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+4" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+5" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Dodge+6" alt="">
+        </div>
+        <div class="car-details">
+          <div class="car-title">2001 Dodge Ram 2500 Diesel Quad Cab 4x4</div>
+          <div class="car-price">$14,999</div>
+          <div class="car-info">
+            320,000 miles<br>
+            Strong durable In-line 6 Cylinder 5.9 Liter Diesel Cummins Engine<br>
+            Long 8 foot bed<br>
+            Prior Salvage Title<br>
+            Savage, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
+      </div>
+
+      <!-- 2015 Mazda Mazda6 Sport (SOLD) -->
+      <div class="car-card">
+        <div class="car-gallery">
+          <img src="https://via.placeholder.com/400x200?text=Mazda6+1" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Mazda6+2" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Mazda6+3" alt="">
+          <img src="https://via.placeholder.com/400x200?text=Mazda6+4" alt="">
+        </div>
+        <div class="car-details">
+          <span class="sold-tag">SOLD</span>
+          <div class="car-title">2015 Mazda Mazda6 Sport</div>
+          <div class="car-price">SOLD</div>
+          <div class="car-info">
+            140,000 Miles<br>
+            2.5 Liter 4 Cylinder Engine<br>
+            6 Speed Skyactive transmission<br>
+            Prior Salvage Title<br>
+            Prior Lake, MN
+          </div>
+          <a href="#" class="contact-btn">Contact / More Info</a>
+        </div>
+      </div>
+
+    </div> <!-- End inventory-grid -->
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about-us">
+    <h2>About Us</h2>
+    <p>Have questions or want to schedule an appointment?</p>
+    <p>For the fastest response, text us at 952-288-7983. Calling is welcome as well — texting ensures fast, swift replies.</p>
+    <p>Serving South Metro Twin Cities: Savage, Burnsville, Shakopee, Prior Lake — affordable, vetted vehicles for sale today.</p>
+  </section>
+
+</main>
+</body>
+</html>
