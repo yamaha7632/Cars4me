@@ -1,68 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - Cars4Me</title>
-<style>
-body { font-family: Arial, sans-serif; background-color:#f5f5f5; margin:0; padding:0; }
-header { background-color:#007bff; color:white; padding:20px; text-align:center; }
-header .logo-container { display:flex; align-items:center; justify-content:center; gap:15px; }
-header .logo { font-weight:bold; font-size:1.8em; background-color:#fff; color:#007bff; padding:5px 10px; border-radius:8px; }
-header h1 { margin:0; }
-header p { margin:5px 0 0 0; font-size:1.2em; }
-nav { display:flex; justify-content:center; background-color:#0056b3; }
-nav a { color:white; padding:15px 20px; text-decoration:none; font-weight:bold; }
-nav a:hover { background-color:#004085; }
-main { max-width:900px; margin:20px auto; padding:0 20px; }
-section { background-color:#fff; padding:25px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); margin-bottom:40px; }
-section h2 { text-align:center; color:#333; margin-bottom:20px; }
-section p { font-size:16px; color:#555; line-height:1.6; margin-bottom:15px; }
-ul { margin-left:20px; color:#555; }
-.footer { background-color:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); text-align:center; font-size:16px; color:#333; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Cars4Me — Local Car Sales Twin Cities | Cars for you, for less.</title>
+  <meta name="description" content="Learn how Cars4Me provides transparent pricing, vetted local car sellers, and budget-friendly vehicles in Savage, Burnsville, Shakopee, and Prior Lake. No dealership markups, just honest car sales.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0f1724;
+      --muted:#6b7280;
+      --brand:#1e63c8;
+      --radius:12px;
+      --max-width:900px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:20px;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.7}
+    .wrap{max-width:var(--max-width);margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+    .logo{width:46px;height:46px;border-radius:9px;background:linear-gradient(135deg,var(--brand),#154f96);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:22px}
+    .motto{color:var(--muted);margin-top:6px;font-size:14px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;margin-left:15px;font-size:14px}
+    nav a:hover{color:var(--brand)}
+    article{background:#f8fafc;border-radius:var(--radius);padding:25px;border:1px solid rgba(15,23,36,0.08);box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+    article h2{margin-top:0;font-size:24px;color:var(--text)}
+    article h3{margin-bottom:10px;color:var(--brand)}
+    p{margin-bottom:14px;font-size:16px;color:var(--text)}
+    ul{margin-left:20px;color:var(--text)}
+    ul li{margin-bottom:6px}
+    footer{margin-top:30px;padding-top:20px;border-top:1px solid rgba(15,23,36,0.08);display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--text)}
+    .small a.phone{color:var(--brand);font-weight:700;text-decoration:none}
+    .highlight{font-weight:600;color:var(--brand)}
+  </style>
 </head>
 <body>
-
-<header>
-  <div class="logo-container">
-    <div class="logo">C4M</div>
-    <div>
-      <h1>Cars4Me</h1>
-      <p>Cars for you, for less.</p>
+<div class="wrap">
+  <header>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="logo">C4M</div>
+      <div>
+        <h1>Cars4Me</h1>
+        <div class="motto">Cars for you, for less.</div>
+      </div>
     </div>
-  </div>
-</header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="highlight">About Us</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-</nav>
-
-<main>
-  <section>
-    <h2>About Us — Local Car Sales Twin Cities</h2>
-    <p>Tired of overpaying at big dealerships? So are we.</p>
+  <article aria-labelledby="about-heading">
+    <h2 id="about-heading">About Us — Local Car Sales Twin Cities</h2>
+    <p><span class="highlight">Tired of overpaying at big dealerships? So are we.</span></p>
     <p>Between high overhead costs, sales commissions, and hidden fees, buying a car from a traditional dealership can feel more like a hassle than a deal. That’s why we set out to do things differently.</p>
-    <p>Our mission is simple: connect buyers with trustworthy local sellers—without unnecessary fees.</p>
-    <p>We’ve built strong relationships with a select group of reliable sellers who work with vehicles that have been in accidents and handpick vehicles that offer great value without compromising on quality or reliability.</p>
+    <p><span class="highlight">Our mission is simple:</span> connect buyers with trustworthy local sellers—without unnecessary fees.</p>
+    <p>We’ve built strong relationships with a select group of reliable sellers over the years and handpick vehicles that offer great value without compromising on quality or reliability.</p>
     <p>Whether you're looking for a dependable daily driver or a budget-friendly option, we’re here to help guide you—not pressure you—through the process. We aim to give you the most bang for your buck and provide honest, upfront details about every vehicle we list.</p>
-    <p><strong>What sets us apart:</strong></p>
+    <h3>What sets us apart:</h3>
     <ul>
       <li>No dealership markups or commissions</li>
-      <li>Carefully vetted local sellers</li>
+      <li>Carefully vetted local sellers in Savage, Burnsville, Shakopee, and Prior Lake</li>
       <li>Transparent pricing and information</li>
       <li>Inventory focused on value and reliability</li>
     </ul>
     <p>We operate by appointment only, so we can give you the time and attention you deserve. Take a look at our current inventory—we may not have hundreds of cars, but what we do have, we believe in.</p>
-  </section>
+  </article>
 
-  <div class="footer">
-    <p>Have questions or want to schedule an appointment?</p>
-    <p>For the fastest response, text 952-288-7983. Calling is welcome as well — texting ensures fast, swift replies.</p>
-    <p>Serving South Metro Twin Cities: Savage, Burnsville, Shakopee, Prior Lake — affordable, vetted vehicles for sale today.</p>
-  </div>
-
-</main>
+  <footer>
+    <div class="small">
+      <div><strong>Have questions or want to schedule an appointment?</strong></div>
+      <div>For the fastest response, <a class="phone" href="sms:+19522887983">text 952-288-7983</a>. Calling is welcome as well — texting ensures fast, swift replies.</div>
+    </div>
+    <div class="small">Serving South Metro Twin Cities: Savage, Burnsville, Shakopee, Prior Lake — affordable, vetted vehicles for sale today.</div>
+  </footer>
+</div>
 </body>
 </html>
